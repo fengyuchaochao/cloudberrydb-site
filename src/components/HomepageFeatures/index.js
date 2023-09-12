@@ -111,9 +111,9 @@ const FeatureList2 = [
   },
 ];
 
-const CompatibilityList = [
+const CommunityList = [
   {
-    title: "Github",
+    title: "GitHub",
     href: "https://github.com/cloudberrydb",
     className: "header-github-link",
   },
@@ -138,7 +138,7 @@ function Feature({ title, description, logo }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center"></div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--left padding-horiz--md">
         <i
           className={styles.titleLogo}
           style={{
@@ -182,11 +182,12 @@ export default function HomepageFeatures() {
       <div class={styles.wrapper}>
         <div className="container">
           <div className={styles.card}>
-            <h2 className={styles.cardTitle}>Join the Compatibility</h2>
+            <h2 className={styles.cardTitle}>Join the Community</h2>
+            <p align="left">Cloudberry Database has a growing open source community, with contributors from around the globe building features, documentation, and assisting other users. There are many ways to contribute to Cloudberry Database, and you can easily find the ones that suit your skills and interests to <a href="/contribute/how-to-contribute" target="blank">begin your contribution journey</a>. Additionally, our community is always there to <a href="/support" target="blank">help and provide support</a> whenever you need it.</p>
             <div className="row">
-              {CompatibilityList.map((props, idx) => (
+              {CommunityList.map((props, idx) => (
                 <div className={clsx("col col--3")}>
-                  <div className={styles.CompatibilityItemBox}>
+                  <div className={styles.CommunityItemBox}>
                     <a
                       target="_blank"
                       href={props.href}
